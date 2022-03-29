@@ -1,5 +1,22 @@
 // import drivers from "./requests/drivers";
 // import constructors from "./requests/constructors";
+import circuits from "./requests/circuits";
+
+/* circuits.getAllCircuits(10).then((circuitList) => {
+  console.log(circuitList);
+}); */
+
+/* circuits.getCircuitsByYear(2022).then((circuitList) => {
+  console.log(circuitList);
+}); */
+
+/* circuits.getCircuitsByYearRace(2022, 10).then((circuitList) => {
+  console.log(circuitList);
+}); */
+
+/* circuits.getCircuitInformations("suzuka").then((circuit) => {
+  console.log(circuit);
+}); */
 
 /* constructors.getAllConstructors(10).then((constructorList) => {
   console.log(constructorList);
