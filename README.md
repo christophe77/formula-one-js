@@ -2,6 +2,20 @@
 
 Package to access formula one datas on both CJS and ESM apps.
 
+## Install and import
+
+    yarn install formula-one-api-wrapper-js
+
+Then import it in your project
+
+    const foaw = require("formula-one-api-wrapper-js");
+    const { results, drivers, seasons, ... } = foaw.requests();
+
+or
+
+    import foaw from "formula-one-api-wrapper-js";
+    const { results, drivers, seasons, ... } = foaw.requests();
+
 ## Methods
 
 ### Drivers
@@ -106,7 +120,7 @@ return array or Constructor object :
         console.log(circuit);
     });
 
-## Seasons
+### Seasons
 
 return array or Season object :
 
@@ -134,4 +148,57 @@ return array or Season object :
     };
     seasons.getAllSeasonsAdvanced(seasonOptions).then((seasonList) => {
         console.log(seasonList);
+    });
+
+### Results
+
+return array or results object :
+
+    type Result = {
+        season: string;
+        round: string;
+        url: string;
+        raceName: string;
+        Circuit: Circuit;
+        date: string;
+        time: string;
+        Results:
+        [
+            {
+                number: string;
+                position: string;
+                positionText: string;
+                points: string;
+                Driver: Driver;
+                Constructor: Constructor;
+                grid: string;
+                laps: string;
+                status: string;
+                Time: {
+                    millis: string;
+                    time: string;
+                };
+                FastestLap: {
+                    rank: string;
+                    lap: string;
+                    Time: {
+                        time: string;
+                    };
+                    AverageSpeed: {
+                        units: string;
+                        speed: string;
+                    };
+                };
+            }
+        ];
+    };
+
+    // Get results for race 10 of 2021
+    results.getResultsByYearRace(2021, 10).then((resultList) => {
+        console.log(resultList);
+    });
+
+    // Get latest race results
+    results.getLatestRaceResults().then((resultList) => {
+        console.log(resultList);
     });
