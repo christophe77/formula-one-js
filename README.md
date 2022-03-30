@@ -232,3 +232,26 @@ return qualifying object :
     qualifyings.getQualifyingsByYearRace(2021, 10).then((qualifyingList) => {
         console.log(qualifyingList);
     });
+
+### Schedule
+
+return schedule object :
+
+    type Schedule = {
+        season: string;
+        round: string;
+        url: string;
+        raceName: string;
+        Circuit: Circuit;
+        date: string;
+        time: string;
+        FirstPractice: { date: string };
+        SecondPractice: { date: string };
+        ThirdPractice: { date: string };
+        Qualifying: { date: string };
+    };
+
+    // Get schedule by year
+    schedule.getScheduleByYear(2021).then((scheduleList) => {
+        console.log(scheduleList);
+    });
