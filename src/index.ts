@@ -5,6 +5,7 @@ import seasons from "./requests/seasons/seasons";
 import results from "./requests/results";
 import qualifyings from "./requests/qualifyings";
 import schedule from "./requests/schedule";
+import lapTimes from "./requests/lapTimes";
 
 export const requests = () => {
   return {
@@ -14,6 +15,7 @@ export const requests = () => {
     seasons,
     results,
     qualifyings,
-    schedule
+    schedule,
+    lapTimes
   };
 }

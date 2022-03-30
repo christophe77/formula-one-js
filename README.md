@@ -265,3 +265,32 @@ return schedule object :
     schedule.getScheduleByYear(2021, 10).then((scheduleList) => {
         console.log(scheduleList);
     });
+
+### LapTimes
+
+return lapTime object :
+
+    type Timing = {
+        driverId: string;
+        position: string;
+        time: string;
+    };
+    type Lap = {
+        number: string;
+        Timings: Timing[];
+    };
+    type LapTime = {
+        season: string;
+        round: string;
+        url: string;
+        raceName: string;
+        Circuit: Circuit;
+        date: string;
+        time: string;
+        Laps: Lap[];
+    } | null;
+
+    // Get lapTime year 2021, race 5, lap 10
+    lapTimes.getLapTime(2021, 5, 10).then((lapTime) => {
+        console.log(lapTime);
+    });
