@@ -1,6 +1,6 @@
 // import drivers from "./requests/drivers";
 // import constructors from "./requests/constructors";
-import circuits from "./requests/circuits";
+// import circuits from "./requests/circuits";
 
 /* circuits.getAllCircuits(10).then((circuitList) => {
   console.log(circuitList);
@@ -20,7 +20,7 @@ import circuits from "./requests/circuits";
 
 /* constructors.getAllConstructors(10).then((constructorList) => {
   console.log(constructorList);
-}); */
+}); */ 
 
 /* constructors.getConstructorsByYear(2021).then((constructorList) => {
   console.log(constructorList);
@@ -32,7 +32,7 @@ import circuits from "./requests/circuits";
 
 /* constructors.getConstructorInformations("red_bull").then((constructor) => {
   console.log(constructor);
-}); */
+});
 
 /* drivers.getAllDrivers(10).then((driverList) => {
   console.log(driverList);
