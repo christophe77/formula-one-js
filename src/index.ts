@@ -3,6 +3,7 @@ import constructors from "./requests/constructors";
 import circuits from "./requests/circuits";
 import seasons from "./requests/seasons/seasons";
 import results from "./requests/results";
+import qualifyings from "./requests/qualifyings";
 
 export const requests = () => {
   return {
@@ -10,6 +11,7 @@ export const requests = () => {
     constructors,
     circuits,
     seasons,
-    results
+    results,
+    qualifyings
   };
 }

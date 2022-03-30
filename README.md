@@ -202,3 +202,33 @@ return array or results object :
     results.getLatestRaceResults().then((resultList) => {
         console.log(resultList);
     });
+
+### Qualifyings
+
+return qualifying object :
+
+    type Qualifying = {
+        season: string;
+        round: string;
+        url: string;
+        raceName: string;
+        Circuit: Circuit;
+        date: string;
+        time: string;
+        QualifyingResults: [
+            {
+                number: string;
+                position: string;
+                Driver: Driver;
+                Constructor: Constructor;
+                Q1: string;
+                Q2: string;
+                Q3: string;
+            }
+        ];
+    };
+
+    // Get qualifyings by year race (ex : year 2021, round 10)
+    qualifyings.getQualifyingsByYearRace(2021, 10).then((qualifyingList) => {
+        console.log(qualifyingList);
+    });
