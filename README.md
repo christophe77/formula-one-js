@@ -294,3 +294,36 @@ return lapTime object :
     lapTimes.getLapTime(2021, 5, 10).then((lapTime) => {
         console.log(lapTime);
     });
+
+### Pit stops
+
+return pitstops object :
+
+    type PitStops = {
+        season: string;
+        round: string;
+        url: string;
+        raceName: string;
+        Circuit: Circuit;
+        date: string;
+        time: string;
+        PitStops: PitStop[];
+    } | null;
+
+    type PitStop = {
+        driverId: string;
+        lap: string;
+        stop: string;
+        time: string;
+        duration: string;
+    };
+
+    // Get pitStops year 2021, race 5
+    pitStops.getPitStopsByRaceYear(2021, 5).then((pitStopsList) => {
+        console.log(pitStopsList);
+    });
+
+    // Get pitStops year 2021, race 5, pitstop number 1
+    pitStops.getPitStopsByPitStopNumber(2021, 5, 1).then((pitStopsList) => {
+        console.log(pitStopsList);
+    });
