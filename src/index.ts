@@ -8,6 +8,7 @@ import schedule from "./requests/schedule";
 import lapTimes from "./requests/lapTimes";
 import pitStops from "./requests/pitStops";
 import standings from "./requests/standings";
+import finishingStatus from "./requests/finishingStatus"
 
 export const requests = () => {
   return {
@@ -20,6 +21,7 @@ export const requests = () => {
     schedule,
     lapTimes,
     pitStops,
-    standings
+    standings,
+    finishingStatus
   };
 }
