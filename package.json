@@ -1,6 +1,6 @@
 {
-  "name": "formula-one-api-wrapper-js",
-  "version": "1.0.0",
+  "name": "formula-one-js",
+  "version": "1.0.1",
   "author": "christophe bellec",
   "engines": {
     "node": "12.x || 14.x || >= 16"
