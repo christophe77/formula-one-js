@@ -5,7 +5,11 @@ Datas are retrieved from the official formula 1 API ergast.com.<br />
 
 ## Install and import
 
-    yarn install formula-one-js
+    yarn add formula-one-js
+
+or
+
+    npm install formula-one-js
 
 Then import it in your project
 
