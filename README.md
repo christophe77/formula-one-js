@@ -87,7 +87,7 @@ return array or Constructor object :
 
 ### Circuits
 
-return array or Constructor object :
+return array or Circuit object :
 
     type Circuit = {
         circuitId: string;
