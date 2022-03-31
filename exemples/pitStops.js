@@ -1,5 +1,5 @@
-const foaw = require("../dist/cjs");
-const { pitStops } = foaw.requests();
+const f1js = require("../dist/cjs");
+const { pitStops } = f1js.requests();
 
 // Get pitStops year 2021, race 5
 pitStops.getPitStopsByRaceYear(2021, 5).then((pitStopsList) => {

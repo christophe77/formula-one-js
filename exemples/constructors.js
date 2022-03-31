@@ -1,5 +1,5 @@
-const foaw = require("../dist/cjs");
-const { constructors } = foaw.requests();
+const f1js = require("../dist/cjs");
+const { constructors } = f1js.requests();
 
 // Get all constructors with limit at 10 constructors
 constructors.getAllConstructors(10).then((constructorList) => {

@@ -1,5 +1,5 @@
-const foaw = require("../dist/cjs");
-const { circuits } = foaw.requests();
+const f1js = require("../dist/cjs");
+const { circuits } = f1js.requests();
 
 // Get all circuits with limit at 10 circuits
 circuits.getAllCircuits(10).then((circuitList) => {

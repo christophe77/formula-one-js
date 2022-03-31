@@ -1,20 +1,21 @@
-# formula-one-api-wrapper-js
+# formula-one-js
 
-Package to access formula one datas on both CJS and ESM apps.
+Package to access formula one datas on both CJS and ESM apps.<br />
+Datas are retrieved from the official formula 1 API ergast.com.<br />
 
 ## Install and import
 
-    yarn install formula-one-api-wrapper-js
+    yarn install formula-one-js
 
 Then import it in your project
 
-    const foaw = require("formula-one-api-wrapper-js");
-    const { results, drivers, seasons, ... } = foaw.requests();
+    const f1js = require("formula-one-js");
+    const { results, drivers, seasons, ... } = f1js.requests();
 
 or
 
-    import foaw from "formula-one-api-wrapper-js";
-    const { results, drivers, seasons, ... } = foaw.requests();
+    import f1js from "formula-one-js";
+    const { results, drivers, seasons, ... } = f1js.requests();
 
 ## Methods
 

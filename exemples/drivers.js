@@ -1,5 +1,5 @@
-const foaw = require("../dist/cjs");
-const { drivers } = foaw.requests();
+const f1js = require("../dist/cjs");
+const { drivers } = f1js.requests();
 
 // Get all drivers with limit at 10 drivers
 drivers.getAllDrivers(10).then((driverList) => {

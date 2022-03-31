@@ -1,5 +1,5 @@
-const foaw = require("../dist/cjs");
-const { schedule } = foaw.requests();
+const f1js = require("../dist/cjs");
+const { schedule } = f1js.requests();
 
 // Get schedule by year
 schedule.getScheduleByYear(2021).then((scheduleList) => {

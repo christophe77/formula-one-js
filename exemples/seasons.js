@@ -1,5 +1,5 @@
-const foaw = require("../dist/cjs");
-const { seasons } = foaw.requests();
+const f1js = require("../dist/cjs");
+const { seasons } = f1js.requests();
 
 // Get all seasons with limit at 5 seasons
 seasons.getAllSeasons(5).then((seasonList) => {

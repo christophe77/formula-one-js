@@ -5,6 +5,14 @@
   "engines": {
     "node": "12.x || 14.x || >= 16"
   },
+  "keywords": [
+    "formula",
+    "formula 1",
+    "formula one",
+    "ergast",
+    "ergast.com",
+    "api"
+  ],
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
