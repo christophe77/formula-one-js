@@ -7,6 +7,7 @@ import qualifyings from "./requests/qualifyings";
 import schedule from "./requests/schedule";
 import lapTimes from "./requests/lapTimes";
 import pitStops from "./requests/pitStops";
+import standings from "./requests/standings";
 
 export const requests = () => {
   return {
@@ -18,6 +19,7 @@ export const requests = () => {
     qualifyings,
     schedule,
     lapTimes,
-    pitStops
+    pitStops,
+    standings
   };
 }
