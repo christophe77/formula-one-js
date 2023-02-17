@@ -1,14 +1,14 @@
 import Circuit from "../circuits";
-declare type Timing = {
+type Timing = {
     driverId: string;
     position: string;
     time: string;
 };
-declare type Lap = {
+type Lap = {
     number: string;
     Timings: Timing[];
 };
-declare type LapTime = {
+type LapTime = {
     season: string;
     round: string;
     url: string;

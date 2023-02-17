@@ -1,6 +1,6 @@
 import Constructor from "../constructors";
 import Driver from "../drivers";
-export declare type DriverStanding = {
+export type DriverStanding = {
     position: string;
     positionText: string;
     points: string;
@@ -8,19 +8,19 @@ export declare type DriverStanding = {
     Driver: Driver;
     Constructors: Constructor[];
 };
-export declare type ConstructorStanding = {
+export type ConstructorStanding = {
     position: string;
     positionText: string;
     points: string;
     wins: string;
     Constructor: Constructor;
 };
-export declare type DriverWinners = {
+export type DriverWinners = {
     season: string;
     round: string;
     DriverStandings: DriverStanding[];
 } | null;
-export declare type ConstructorWinners = {
+export type ConstructorWinners = {
     season: string;
     round: string;
     ConstructorStandings: ConstructorStanding[];

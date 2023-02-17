@@ -1,12 +1,12 @@
 import Circuit from "../circuits";
-declare type PitStop = {
+type PitStop = {
     driverId: string;
     lap: string;
     stop: string;
     time: string;
     duration: string;
 };
-declare type PitStops = {
+type PitStops = {
     season: string;
     round: string;
     url: string;

@@ -1,4 +1,4 @@
-declare type Constructor = {
+type Constructor = {
     constructorId: string;
     url: string;
     name: string;

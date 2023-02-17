@@ -1,5 +1,5 @@
 import Circuit from "../circuits";
-declare type Schedule = {
+type Schedule = {
     season: string;
     round: string;
     url: string;

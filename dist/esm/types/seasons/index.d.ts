@@ -1,8 +1,8 @@
-export declare type Season = {
+export type Season = {
     season: string;
     url: string;
 };
-export declare type SeasonOptions = {
+export type SeasonOptions = {
     circuits?: string;
     constructors?: string;
     drivers?: string;

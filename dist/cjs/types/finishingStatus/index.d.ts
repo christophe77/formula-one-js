@@ -1,4 +1,4 @@
-declare type FinishingStatus = {
+type FinishingStatus = {
     statusId: string;
     count: string;
     status: string;

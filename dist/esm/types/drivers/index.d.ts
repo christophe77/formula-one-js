@@ -1,4 +1,4 @@
-declare type Driver = {
+type Driver = {
     driverId: string;
     code: string;
     url: string;

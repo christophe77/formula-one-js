@@ -1,7 +1,7 @@
 import Driver from "../drivers";
 import Constructor from "../constructors";
 import Circuit from "../circuits";
-declare type Qualifying = {
+type Qualifying = {
     season: string;
     round: string;
     url: string;
