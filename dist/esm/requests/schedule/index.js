@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import axiosInstance from "../../utils/axiosInstance";
+import axiosInstance from '../../utils/axiosInstance';
 var getScheduleByYear = function (year) { return __awaiter(void 0, void 0, void 0, function () {
     var response, qualifyingsList, _a;
     return __generator(this, function (_b) {
