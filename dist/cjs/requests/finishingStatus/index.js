@@ -106,6 +106,6 @@ var getFinishingStatusForSpecificYearRace = function (year, round) { return __aw
 var finishingStatus = {
     getFinishingStatusCodes: getFinishingStatusCodes,
     getFinishingStatusForSpecificYear: getFinishingStatusForSpecificYear,
-    getFinishingStatusForSpecificYearRace: getFinishingStatusForSpecificYearRace
+    getFinishingStatusForSpecificYearRace: getFinishingStatusForSpecificYearRace,
 };
 exports.default = finishingStatus;

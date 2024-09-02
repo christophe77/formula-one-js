@@ -56,7 +56,7 @@ var getDriverStandingsByYearRace = function (year, round) { return __awaiter(voi
         }
     });
 }); };
-var getDriverStandingsByYear = function (year, round) { return __awaiter(void 0, void 0, void 0, function () {
+var getDriverStandingsByYear = function (year) { return __awaiter(void 0, void 0, void 0, function () {
     var response, standingsList, _a;
     return __generator(this, function (_b) {
         switch (_b.label) {

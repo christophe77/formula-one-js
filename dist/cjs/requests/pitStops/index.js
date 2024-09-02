@@ -84,6 +84,6 @@ var getPitStopsByPitStopNumber = function (year, round, pitStopNumber) { return 
 }); };
 var pitStops = {
     getPitStopsByRaceYear: getPitStopsByRaceYear,
-    getPitStopsByPitStopNumber: getPitStopsByPitStopNumber
+    getPitStopsByPitStopNumber: getPitStopsByPitStopNumber,
 };
 exports.default = pitStops;

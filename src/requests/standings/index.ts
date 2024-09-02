@@ -27,7 +27,6 @@ const getDriverStandingsByYearRace = async (
 
 const getDriverStandingsByYear = async (
   year: number,
-  round: number
 ): Promise<DriverStanding[]> => {
   try {
     const response = await axiosInstance.get(`${year}/driverStandings.json`);

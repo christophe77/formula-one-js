@@ -1,6 +1,6 @@
 {
 	"name": "formula-one-js",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"author": "christophe bellec",
 	"homepage": "https://github.com/christophe77/formula-one-js",
 	"engines": {
@@ -27,13 +27,13 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@types/node": "^18.13.0",
-		"eslint": "^8.12.0",
-		"nodemon": "^3.1.0",
-		"ts-node": "^10.7.0",
-		"typescript": "^4.6.3"
+		"@types/node": "^22.5.2",
+		"eslint": "^9.9.1",
+		"nodemon": "^3.1.4",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.5.4"
 	},
 	"dependencies": {
-		"axios": "^0.28.0"
+		"axios": "^1.7.7"
 	}
 }

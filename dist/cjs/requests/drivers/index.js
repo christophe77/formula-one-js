@@ -52,13 +52,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var axiosInstance_1 = __importDefault(require("../../utils/axiosInstance"));
 var emptyDriver = {
-    driverId: "",
-    code: "",
-    url: "",
-    givenName: "",
-    familyName: "",
-    dateOfBirth: "",
-    nationality: "",
+    driverId: '',
+    code: '',
+    url: '',
+    givenName: '',
+    familyName: '',
+    dateOfBirth: '',
+    nationality: '',
 };
 var getAllDrivers = function (limit) { return __awaiter(void 0, void 0, void 0, function () {
     var response, driverList, _a;

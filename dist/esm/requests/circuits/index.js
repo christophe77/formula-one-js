@@ -45,16 +45,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import axiosInstance from "../../utils/axiosInstance";
+import axiosInstance from '../../utils/axiosInstance';
 var emptyCircuit = {
-    circuitId: "",
-    url: "",
-    circuitName: "",
+    circuitId: '',
+    url: '',
+    circuitName: '',
     Location: {
-        lat: "",
-        long: "",
-        locality: "",
-        country: "",
+        lat: '',
+        long: '',
+        locality: '',
+        country: '',
     },
 };
 var getAllCircuits = function (limit) { return __awaiter(void 0, void 0, void 0, function () {
@@ -145,6 +145,6 @@ var circuits = {
     getAllCircuits: getAllCircuits,
     getCircuitsByYear: getCircuitsByYear,
     getCircuitsByYearRace: getCircuitsByYearRace,
-    getCircuitInformations: getCircuitInformations
+    getCircuitInformations: getCircuitInformations,
 };
 export default circuits;

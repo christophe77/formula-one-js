@@ -1,4 +1,4 @@
-import Constructor from "../../types/constructors";
+import Constructor from '../../types/constructors';
 declare const constructors: {
     getAllConstructors: (limit: number) => Promise<Constructor[]>;
     getConstructorsByYear: (year: number) => Promise<Constructor[]>;

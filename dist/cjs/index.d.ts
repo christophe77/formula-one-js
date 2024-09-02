@@ -23,7 +23,7 @@ export declare const requests: () => {
     };
     results: {
         getResultsByYearRace: (year: number, round: number) => Promise<import("./types/results").default[]>;
-        getLatestRaceResults: () => Promise<string | import("./types/results").default[]>;
+        getLatestRaceResults: () => Promise<import("./types/results").default[] | string>;
     };
     qualifyings: {
         getQualifyingsByYearRace: (year: number, round: number) => Promise<import("./types/qualifyings").default[]>;
@@ -42,7 +42,7 @@ export declare const requests: () => {
     };
     standings: {
         getDriverStandingsByYearRace: (year: number, round: number) => Promise<import("./types/standings").DriverStanding[]>;
-        getDriverStandingsByYear: (year: number, round: number) => Promise<import("./types/standings").DriverStanding[]>;
+        getDriverStandingsByYear: (year: number) => Promise<import("./types/standings").DriverStanding[]>;
         getConstructorStandingsByYearRace: (year: number, round: number) => Promise<import("./types/standings").ConstructorStanding[]>;
         getConstructorStandingsByYear: (year: number) => Promise<import("./types/standings").ConstructorStanding[]>;
         getCurrentDriverStanding: () => Promise<import("./types/standings").DriverStanding[]>;

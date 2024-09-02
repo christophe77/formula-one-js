@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import axiosInstance from "../../utils/axiosInstance";
+import axiosInstance from '../../utils/axiosInstance';
 var getAllSeasons = function (limit) { return __awaiter(void 0, void 0, void 0, function () {
     var response, seasonsList, _a;
     return __generator(this, function (_b) {
@@ -61,10 +61,10 @@ var getAllSeasonsAdvanced = function (options) { return __awaiter(void 0, void 0
     return __generator(this, function (_d) {
         switch (_d.label) {
             case 0:
-                advancedOptions = "";
+                advancedOptions = '';
                 for (_i = 0, _a = Object.entries(options); _i < _a.length; _i++) {
                     _b = _a[_i], key = _b[0], value = _b[1];
-                    if (value && value !== "") {
+                    if (value && value !== '') {
                         advancedOptions = "".concat(advancedOptions).concat(key, "/").concat(value, "/");
                     }
                 }

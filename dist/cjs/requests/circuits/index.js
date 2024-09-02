@@ -52,14 +52,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var axiosInstance_1 = __importDefault(require("../../utils/axiosInstance"));
 var emptyCircuit = {
-    circuitId: "",
-    url: "",
-    circuitName: "",
+    circuitId: '',
+    url: '',
+    circuitName: '',
     Location: {
-        lat: "",
-        long: "",
-        locality: "",
-        country: "",
+        lat: '',
+        long: '',
+        locality: '',
+        country: '',
     },
 };
 var getAllCircuits = function (limit) { return __awaiter(void 0, void 0, void 0, function () {
@@ -150,6 +150,6 @@ var circuits = {
     getAllCircuits: getAllCircuits,
     getCircuitsByYear: getCircuitsByYear,
     getCircuitsByYearRace: getCircuitsByYearRace,
-    getCircuitInformations: getCircuitInformations
+    getCircuitInformations: getCircuitInformations,
 };
 exports.default = circuits;

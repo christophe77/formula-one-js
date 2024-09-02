@@ -66,10 +66,10 @@ var getAllSeasonsAdvanced = function (options) { return __awaiter(void 0, void 0
     return __generator(this, function (_d) {
         switch (_d.label) {
             case 0:
-                advancedOptions = "";
+                advancedOptions = '';
                 for (_i = 0, _a = Object.entries(options); _i < _a.length; _i++) {
                     _b = _a[_i], key = _b[0], value = _b[1];
-                    if (value && value !== "") {
+                    if (value && value !== '') {
                         advancedOptions = "".concat(advancedOptions).concat(key, "/").concat(value, "/");
                     }
                 }

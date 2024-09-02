@@ -45,15 +45,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import axiosInstance from "../../utils/axiosInstance";
+import axiosInstance from '../../utils/axiosInstance';
 var emptyDriver = {
-    driverId: "",
-    code: "",
-    url: "",
-    givenName: "",
-    familyName: "",
-    dateOfBirth: "",
-    nationality: "",
+    driverId: '',
+    code: '',
+    url: '',
+    givenName: '',
+    familyName: '',
+    dateOfBirth: '',
+    nationality: '',
 };
 var getAllDrivers = function (limit) { return __awaiter(void 0, void 0, void 0, function () {
     var response, driverList, _a;

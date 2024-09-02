@@ -52,10 +52,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var axiosInstance_1 = __importDefault(require("../../utils/axiosInstance"));
 var emptyConstructor = {
-    constructorId: "",
-    url: "",
-    name: "",
-    nationality: "",
+    constructorId: '',
+    url: '',
+    name: '',
+    nationality: '',
 };
 var getAllConstructors = function (limit) { return __awaiter(void 0, void 0, void 0, function () {
     var response, constructorList, _a;
@@ -145,6 +145,6 @@ var constructors = {
     getAllConstructors: getAllConstructors,
     getConstructorsByYear: getConstructorsByYear,
     getConstructorsByRaceYear: getConstructorsByRaceYear,
-    getConstructorInformations: getConstructorInformations
+    getConstructorInformations: getConstructorInformations,
 };
 exports.default = constructors;

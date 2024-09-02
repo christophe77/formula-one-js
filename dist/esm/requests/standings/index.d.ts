@@ -1,7 +1,7 @@
 import { DriverStanding, ConstructorStanding, DriverWinners, ConstructorWinners } from "../../types/standings";
 declare const standings: {
     getDriverStandingsByYearRace: (year: number, round: number) => Promise<DriverStanding[]>;
-    getDriverStandingsByYear: (year: number, round: number) => Promise<DriverStanding[]>;
+    getDriverStandingsByYear: (year: number) => Promise<DriverStanding[]>;
     getConstructorStandingsByYearRace: (year: number, round: number) => Promise<ConstructorStanding[]>;
     getConstructorStandingsByYear: (year: number) => Promise<ConstructorStanding[]>;
     getCurrentDriverStanding: () => Promise<DriverStanding[]>;

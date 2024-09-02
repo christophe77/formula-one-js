@@ -1,4 +1,4 @@
-import FinishingStatus from "../../types/finishingStatus";
+import FinishingStatus from '../../types/finishingStatus';
 declare const finishingStatus: {
     getFinishingStatusCodes: () => Promise<FinishingStatus[]>;
     getFinishingStatusForSpecificYear: (year: number) => Promise<FinishingStatus[]>;

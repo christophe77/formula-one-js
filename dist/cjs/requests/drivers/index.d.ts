@@ -1,4 +1,4 @@
-import Driver from "../../types/drivers";
+import Driver from '../../types/drivers';
 declare const drivers: {
     getAllDrivers: (limit: number) => Promise<Driver[]>;
     getDriversByYear: (year: number) => Promise<Driver[]>;
