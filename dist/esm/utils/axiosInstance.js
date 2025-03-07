@@ -5,6 +5,6 @@ var httpsAgent = new https.Agent({
 });
 var axiosInstance = axios.create({
     httpsAgent: httpsAgent,
-    baseURL: "https://ergast.com/api/f1/",
+    baseURL: "http://api.jolpi.ca/ergast/f1/",
 });
 export default axiosInstance;

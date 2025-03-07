@@ -12,6 +12,8 @@
 		"formula one",
 		"ergast",
 		"ergast.com",
+		"jolpica",
+		"jolpi.ca",
 		"api"
 	],
 	"main": "./dist/cjs/index.js",
