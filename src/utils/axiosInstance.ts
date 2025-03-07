@@ -7,7 +7,7 @@ const httpsAgent = new https.Agent({
 
 const axiosInstance = axios.create({
   httpsAgent,
-  baseURL: "https://ergast.com/api/f1/",
+  baseURL: "http://api.jolpi.ca/ergast/f1/",
 });
 
 export default axiosInstance;
