@@ -25,7 +25,9 @@
 		"build:esm": "tsc",
 		"build:cjs": "tsc --module commonjs --outDir dist/cjs",
 		"prepublish": "yarn build",
-		"lint": "eslint . --ext .ts"
+		"lint": "eslint . --ext .ts",
+		"test": "vitest run",
+		"test:watch": "vitest"
 	},
 	"license": "MIT",
 	"devDependencies": {
