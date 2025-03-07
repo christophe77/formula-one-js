@@ -4,29 +4,29 @@ import Result from '../../types/results';
 const getResultsByYearRace = async (
 	year: number,
 	round: number,
-): Promise<Result[]> => {
+): Promise<Result | null> => {
 	try {
 		const response = await axiosInstance.get(`${year}/${round}/results.json`);
 		if (response.status === 200) {
 			const resultList = response.data.MRData.RaceTable.Races[0];
-			return resultList || [];
+			return resultList || null;
 		}
-		return [];
+		return null;
 	} catch {
-		return [];
+		return null;
 	}
 };
 
-const getLatestRaceResults = async (): Promise<Result[] | string> => {
+const getLatestRaceResults = async (): Promise<Result[] | null> => {
 	try {
 		const response = await axiosInstance.get(`current/last/results.json`);
 		if (response.status === 200) {
 			const resultList = response.data.MRData.RaceTable.Races[0];
-			return resultList || [];
+			return resultList || null;
 		}
-		return [];
+		return null;
 	} catch {
-		return [];
+		return null;
 	}
 };
 

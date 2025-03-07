@@ -4,18 +4,18 @@ import Qualifying from '../../types/qualifyings';
 const getQualifyingsByYearRace = async (
 	year: number,
 	round: number,
-): Promise<Qualifying[]> => {
+): Promise<Qualifying | null> => {
 	try {
 		const response = await axiosInstance.get(
 			`${year}/${round}/qualifying.json`,
 		);
 		if (response.status === 200) {
 			const qualifyingsList = response.data.MRData.RaceTable.Races[0];
-			return qualifyingsList || [];
+			return qualifyingsList || null;
 		}
-		return [];
+		return null;
 	} catch {
-		return [];
+		return null;
 	}
 };
 
