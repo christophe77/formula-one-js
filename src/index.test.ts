@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeAll } from "vitest";
+import { describe, it, expect } from "vitest";
 
 import circuits from "./requests/circuits";
 import constructors from "./requests/constructors";

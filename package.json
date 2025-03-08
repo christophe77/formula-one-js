@@ -1,6 +1,6 @@
 {
 	"name": "formula-one-js",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"author": "christophe bellec",
 	"homepage": "https://github.com/christophe77/formula-one-js",
 	"engines": {
@@ -16,12 +16,16 @@
 		"jolpi.ca",
 		"api"
 	],
-	"type": "module",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"exports": {
+		"require": "./dist/cjs/index.js",
+		"import": "./dist/esm/index.js"
+	},
+	"main": "./dist/cjs/index.js",
 	"scripts": {
-		"start": "yarn build && node ./dist/index.js",
-		"build": "tsc",
+		"start": "yarn build && node ./dist/cjs/index.js",
+		"build:cjs": "npx tsc  --target es2015 --module commonjs --moduleResolution node10 --outDir dist/cjs/",
+		"build:esm": "npx tsc --target es2022 --module es2022 --moduleResolution bundler --outDir dist/esm/",
+		"build": "yarn build:cjs && yarn build:esm",
 		"prepublish": "yarn build",
 		"lint": "eslint . --ext .ts",
 		"test": "vitest run",
