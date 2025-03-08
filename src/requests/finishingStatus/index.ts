@@ -1,5 +1,5 @@
-import axiosInstance from '../../utils/axiosInstance';
-import FinishingStatus from '../../types/finishingStatus';
+import axiosInstance from '../../utils/axiosInstance.js';
+import FinishingStatus from '../../types/finishingStatus/index.js';
 
 const getFinishingStatusCodes = async (): Promise<FinishingStatus[]> => {
 	try {

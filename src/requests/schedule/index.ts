@@ -1,5 +1,5 @@
-import axiosInstance from '../../utils/axiosInstance';
-import Schedule from '../../types/schedule';
+import axiosInstance from '../../utils/axiosInstance.js';
+import Schedule from '../../types/schedule/index.js';
 
 const getScheduleByYear = async (year: number): Promise<Schedule[]> => {
 	try {

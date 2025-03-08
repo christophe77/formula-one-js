@@ -1,10 +1,10 @@
 import axios from "axios";
 import * as https from "https";
-var httpsAgent = new https.Agent({
+const httpsAgent = new https.Agent({
     rejectUnauthorized: false,
 });
-var axiosInstance = axios.create({
-    httpsAgent: httpsAgent,
+const axiosInstance = axios.create({
+    httpsAgent,
     baseURL: "http://api.jolpi.ca/ergast/f1/",
 });
 export default axiosInstance;

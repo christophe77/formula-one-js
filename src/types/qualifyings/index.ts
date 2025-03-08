@@ -1,6 +1,6 @@
-import Driver from "../drivers";
-import Constructor from "../constructors";
-import Circuit from "../circuits";
+import Driver from "../drivers/index.js";
+import Constructor from "../constructors/index.js";
+import Circuit from "../circuits/index.js";
 
 type Qualifying = {
   season: string;

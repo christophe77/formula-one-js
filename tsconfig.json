@@ -1,15 +1,19 @@
 {
 	"compilerOptions": {
-		"noImplicitAny": true,
-		"removeComments": true,
-		"preserveConstEnums": true,
-		"sourceMap": true,
-		"allowJs": true,
-		"moduleResolution": "Node",
-		"declaration": true,
-		"allowSyntheticDefaultImports": true,
+		"target": "ES2022",
+		"module": "NodeNext",
+		"rootDir": "src",
+		"strict": true,
 		"esModuleInterop": true,
-		"skipLibCheck": true
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"declaration": true,
+		"allowJs": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		"emitDeclarationOnly": false,
+		"noEmit": false
 	},
-	"exclude": ["node_modules", "**/*.test.*", "**/*.spec.*", "**/*.stories.*"]
+	"include": ["src"],
+	"exclude": ["node_modules", "dist"]
 }

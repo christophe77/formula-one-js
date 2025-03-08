@@ -36,13 +36,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var axios_1 = __importDefault(require("axios"));
-var https = __importStar(require("https"));
-var httpsAgent = new https.Agent({
+const axios_1 = __importDefault(require("axios"));
+const https = __importStar(require("https"));
+const httpsAgent = new https.Agent({
     rejectUnauthorized: false,
 });
-var axiosInstance = axios_1.default.create({
-    httpsAgent: httpsAgent,
+const axiosInstance = axios_1.default.create({
+    httpsAgent,
     baseURL: "http://api.jolpi.ca/ergast/f1/",
 });
 exports.default = axiosInstance;

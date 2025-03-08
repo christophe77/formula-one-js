@@ -1,5 +1,5 @@
-import axiosInstance from '../../utils/axiosInstance';
-import Constructor from '../../types/constructors';
+import axiosInstance from '../../utils/axiosInstance.js';
+import Constructor from '../../types/constructors/index.js';
 
 const emptyConstructor = {
 	constructorId: '',

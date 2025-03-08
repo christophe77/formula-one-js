@@ -1,5 +1,5 @@
-import axiosInstance from '../../utils/axiosInstance';
-import Circuit from '../../types/circuits';
+import axiosInstance from '../../utils/axiosInstance.js';
+import Circuit from '../../types/circuits/index.js';
 
 const emptyCircuit = {
 	circuitId: '',

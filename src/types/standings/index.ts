@@ -1,5 +1,5 @@
-import Constructor from "../constructors";
-import Driver from "../drivers";
+import Constructor from "../constructors/index.js";
+import Driver from "../drivers/index.js";
 
 export type DriverStanding = {
   position: string;

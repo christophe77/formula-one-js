@@ -1,5 +1,5 @@
-import axiosInstance from '../../utils/axiosInstance';
-import PitStops from '../../types/pitStops';
+import axiosInstance from '../../utils/axiosInstance.js';
+import PitStops from '../../types/pitStops/index.js';
 
 const getPitStopsByRaceYear = async (
 	year: number,

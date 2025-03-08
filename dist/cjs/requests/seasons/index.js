@@ -1,0 +1,44 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const axiosInstance_js_1 = __importDefault(require("../../utils/axiosInstance.js"));
+const getAllSeasons = async (limit) => {
+    try {
+        const response = await axiosInstance_js_1.default.get(`seasons.json?limit=${limit}`);
+        if (response.status === 200) {
+            const seasonsList = response.data.MRData.SeasonTable.Seasons;
+            return seasonsList || [];
+        }
+        return [];
+    }
+    catch {
+        return [];
+    }
+};
+const getAllSeasonsAdvanced = async (options) => {
+    let advancedOptions = '';
+    for (const [key, value] of Object.entries(options)) {
+        if (value && value !== '') {
+            advancedOptions = `${advancedOptions}${key}/${value}/`;
+        }
+    }
+    try {
+        const response = await axiosInstance_js_1.default.get(`${advancedOptions}seasons.json`);
+        if (response.status === 200) {
+            const seasonsList = response.data.MRData.SeasonTable.Seasons;
+            return seasonsList || [];
+        }
+        return [];
+    }
+    catch {
+        return [];
+    }
+};
+const seasons = {
+    getAllSeasons,
+    getAllSeasonsAdvanced,
+};
+exports.default = seasons;
+//# sourceMappingURL=index.js.map

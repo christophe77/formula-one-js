@@ -1,16 +1,16 @@
 import { describe, it, expect } from "vitest";
 
-import circuits from "./requests/circuits";
-import constructors from "./requests/constructors";
-import drivers from "./requests/drivers";
-import finishingStatus from "./requests/finishingStatus";
-import lapTimes from "./requests/lapTimes";
-import pitStops from "./requests/pitStops";
-import qualifyings from "./requests/qualifyings";
-import results from "./requests/results";
-import schedule from "./requests/schedule";
-import seasons from "./requests/seasons/seasons";
-import standings from "./requests/standings";
+import circuits from "./requests/circuits/index.js";
+import constructors from "./requests/constructors/index.js";
+import drivers from "./requests/drivers/index.js";
+import finishingStatus from "./requests/finishingStatus/index.js";
+import lapTimes from "./requests/lapTimes/index.js";
+import pitStops from "./requests/pitStops/index.js";
+import qualifyings from "./requests/qualifyings/index.js";
+import results from "./requests/results/index.js";
+import schedule from "./requests/schedule/index.js";
+import seasons from "./requests/seasons/index.js";
+import standings from "./requests/standings/index.js";
 
 describe("Circuits API", () => {
   it("should retrieve all circuits for a year", async () => {

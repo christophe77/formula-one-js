@@ -1,4 +1,4 @@
-import Circuit from "../circuits";
+import Circuit from "../circuits/index.js";
 type Timing = {
   driverId: string;
   position: string;

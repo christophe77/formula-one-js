@@ -1,10 +1,10 @@
-import axiosInstance from "../../utils/axiosInstance";
+import axiosInstance from "../../utils/axiosInstance.js";
 import {
   DriverStanding,
   ConstructorStanding,
   DriverWinners,
   ConstructorWinners,
-} from "../../types/standings";
+} from "../../types/standings/index.js";
 
 const getDriverStandingsByYearRace = async (
   year: number,

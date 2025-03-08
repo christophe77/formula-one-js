@@ -1,5 +1,5 @@
-import axiosInstance from '../../utils/axiosInstance';
-import Qualifying from '../../types/qualifyings';
+import axiosInstance from '../../utils/axiosInstance.js';
+import Qualifying from '../../types/qualifyings/index.js';
 
 const getQualifyingsByYearRace = async (
 	year: number,

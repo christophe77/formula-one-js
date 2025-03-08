@@ -4,30 +4,30 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.requests = void 0;
-var drivers_1 = __importDefault(require("./requests/drivers"));
-var constructors_1 = __importDefault(require("./requests/constructors"));
-var circuits_1 = __importDefault(require("./requests/circuits"));
-var seasons_1 = __importDefault(require("./requests/seasons/seasons"));
-var results_1 = __importDefault(require("./requests/results"));
-var qualifyings_1 = __importDefault(require("./requests/qualifyings"));
-var schedule_1 = __importDefault(require("./requests/schedule"));
-var lapTimes_1 = __importDefault(require("./requests/lapTimes"));
-var pitStops_1 = __importDefault(require("./requests/pitStops"));
-var standings_1 = __importDefault(require("./requests/standings"));
-var finishingStatus_1 = __importDefault(require("./requests/finishingStatus"));
-var requests = function () {
+const index_js_1 = __importDefault(require("./requests/drivers/index.js"));
+const index_js_2 = __importDefault(require("./requests/constructors/index.js"));
+const index_js_3 = __importDefault(require("./requests/circuits/index.js"));
+const index_js_4 = __importDefault(require("./requests/seasons/index.js"));
+const index_js_5 = __importDefault(require("./requests/results/index.js"));
+const index_js_6 = __importDefault(require("./requests/qualifyings/index.js"));
+const index_js_7 = __importDefault(require("./requests/schedule/index.js"));
+const index_js_8 = __importDefault(require("./requests/lapTimes/index.js"));
+const index_js_9 = __importDefault(require("./requests/pitStops/index.js"));
+const index_js_10 = __importDefault(require("./requests/standings/index.js"));
+const index_js_11 = __importDefault(require("./requests/finishingStatus/index.js"));
+const requests = () => {
     return {
-        drivers: drivers_1.default,
-        constructors: constructors_1.default,
-        circuits: circuits_1.default,
-        seasons: seasons_1.default,
-        results: results_1.default,
-        qualifyings: qualifyings_1.default,
-        schedule: schedule_1.default,
-        lapTimes: lapTimes_1.default,
-        pitStops: pitStops_1.default,
-        standings: standings_1.default,
-        finishingStatus: finishingStatus_1.default
+        drivers: index_js_1.default,
+        constructors: index_js_2.default,
+        circuits: index_js_3.default,
+        seasons: index_js_4.default,
+        results: index_js_5.default,
+        qualifyings: index_js_6.default,
+        schedule: index_js_7.default,
+        lapTimes: index_js_8.default,
+        pitStops: index_js_9.default,
+        standings: index_js_10.default,
+        finishingStatus: index_js_11.default
     };
 };
 exports.requests = requests;

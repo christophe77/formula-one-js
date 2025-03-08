@@ -1,5 +1,5 @@
-import axiosInstance from '../../utils/axiosInstance';
-import Result from '../../types/results';
+import axiosInstance from '../../utils/axiosInstance.js';
+import Result from '../../types/results/index.js';
 
 const getResultsByYearRace = async (
 	year: number,

@@ -1,5 +1,5 @@
-import axiosInstance from '../../utils/axiosInstance';
-import Driver from '../../types/drivers';
+import axiosInstance from '../../utils/axiosInstance.js';
+import Driver from '../../types/drivers/index.js';
 
 const emptyDriver = {
 	driverId: '',

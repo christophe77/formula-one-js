@@ -1,5 +1,5 @@
-import axiosInstance from '../../utils/axiosInstance';
-import LapTime from '../../types/lapTimes';
+import axiosInstance from '../../utils/axiosInstance.js';
+import LapTime from '../../types/lapTimes/index.js';
 
 const getLapTime = async (
 	year: number,
