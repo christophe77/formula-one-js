@@ -9,7 +9,6 @@ Datas are retrieved from the official formula 1 API ergast.com.<br />
 
 - Ergast F1 API has ended and [Alejandro](https://github.com/ablanco) updated the app replacing ergast api with jolpica api.
 - Alejandro also added testing with Vitest
-- Package is now esm only
 
 ## Install and import
 
@@ -21,7 +20,7 @@ or
 
 Then import it in your project
 
-    import f1js from "formula-one-js";
+    import * as f1js from "formula-one-js";
     const { results, drivers, seasons, ... } = f1js.requests();
 
 ## Methods
