@@ -1,7 +1,15 @@
 # formula-one-js
 
-Package to access formula one datas on both CJS and ESM apps.<br />
+Package to access formula one datas.<br />
 Datas are retrieved from the official formula 1 API ergast.com.<br />
+
+## Latest update
+
+1.1.0 :
+
+- Ergast F1 API has ended and [Alejandro](https://github.com/ablanco) updated the app replacing ergast api with jolpica api.
+- Alejandro also added testing with Vitest
+- Package is now esm only
 
 ## Install and import
 
@@ -12,11 +20,6 @@ or
     npm install formula-one-js
 
 Then import it in your project
-
-    const f1js = require("formula-one-js");
-    const { results, drivers, seasons, ... } = f1js.requests();
-
-or
 
     import f1js from "formula-one-js";
     const { results, drivers, seasons, ... } = f1js.requests();
