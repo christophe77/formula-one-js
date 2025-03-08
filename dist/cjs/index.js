@@ -1,18 +1,21 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.requests = void 0;
-const drivers_1 = require("./requests/drivers");
-const constructors_1 = require("./requests/constructors");
-const circuits_1 = require("./requests/circuits");
-const seasons_1 = require("./requests/seasons/seasons");
-const results_1 = require("./requests/results");
-const qualifyings_1 = require("./requests/qualifyings");
-const schedule_1 = require("./requests/schedule");
-const lapTimes_1 = require("./requests/lapTimes");
-const pitStops_1 = require("./requests/pitStops");
-const standings_1 = require("./requests/standings");
-const finishingStatus_1 = require("./requests/finishingStatus");
-const requests = () => {
+var drivers_1 = __importDefault(require("./requests/drivers"));
+var constructors_1 = __importDefault(require("./requests/constructors"));
+var circuits_1 = __importDefault(require("./requests/circuits"));
+var seasons_1 = __importDefault(require("./requests/seasons/seasons"));
+var results_1 = __importDefault(require("./requests/results"));
+var qualifyings_1 = __importDefault(require("./requests/qualifyings"));
+var schedule_1 = __importDefault(require("./requests/schedule"));
+var lapTimes_1 = __importDefault(require("./requests/lapTimes"));
+var pitStops_1 = __importDefault(require("./requests/pitStops"));
+var standings_1 = __importDefault(require("./requests/standings"));
+var finishingStatus_1 = __importDefault(require("./requests/finishingStatus"));
+var requests = function () {
     return {
         drivers: drivers_1.default,
         constructors: constructors_1.default,
@@ -28,3 +31,4 @@ const requests = () => {
     };
 };
 exports.requests = requests;
+//# sourceMappingURL=index.js.map

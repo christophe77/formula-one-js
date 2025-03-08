@@ -9,18 +9,19 @@ import lapTimes from "./requests/lapTimes";
 import pitStops from "./requests/pitStops";
 import standings from "./requests/standings";
 import finishingStatus from "./requests/finishingStatus";
-export const requests = () => {
+export var requests = function () {
     return {
-        drivers,
-        constructors,
-        circuits,
-        seasons,
-        results,
-        qualifyings,
-        schedule,
-        lapTimes,
-        pitStops,
-        standings,
-        finishingStatus
+        drivers: drivers,
+        constructors: constructors,
+        circuits: circuits,
+        seasons: seasons,
+        results: results,
+        qualifyings: qualifyings,
+        schedule: schedule,
+        lapTimes: lapTimes,
+        pitStops: pitStops,
+        standings: standings,
+        finishingStatus: finishingStatus
     };
 };
+//# sourceMappingURL=index.js.map
