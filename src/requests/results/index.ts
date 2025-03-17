@@ -17,7 +17,7 @@ const getResultsByYearRace = async (
 	}
 };
 
-const getLatestRaceResults = async (): Promise<Result[] | null> => {
+const getLatestRaceResults = async (): Promise<Result | null> => {
 	try {
 		const response = await axiosInstance.get(`current/last/results.json`);
 		if (response.status === 200) {

@@ -19,7 +19,21 @@ const getQualifyingsByYearRace = async (
 	}
 };
 
+const getLatestQualifying = async (): Promise<Qualifying | null> => {
+	try {
+		const response = await axiosInstance.get(`current/last/qualifying.json`);
+		if (response.status === 200) {
+			const qualifyingsList = response.data.MRData.RaceTable.Races[0];
+			return qualifyingsList || null;
+		}
+		return null;
+	} catch {
+		return null;
+	}
+};
+
 const qualifyings = {
 	getQualifyingsByYearRace,
+	getLatestQualifying,
 };
 export default qualifyings;
