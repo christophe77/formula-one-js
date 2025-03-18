@@ -23,10 +23,11 @@ export declare const requests: () => {
     };
     results: {
         getResultsByYearRace: (year: number, round: number) => Promise<import("./types/results/index.js").default | null>;
-        getLatestRaceResults: () => Promise<import("./types/results/index.js").default[] | null>;
+        getLatestRaceResults: () => Promise<import("./types/results/index.js").default | null>;
     };
     qualifyings: {
         getQualifyingsByYearRace: (year: number, round: number) => Promise<import("./types/qualifyings/index.js").default | null>;
+        getLatestQualifying: () => Promise<import("./types/qualifyings/index.js").default | null>;
     };
     schedule: {
         getScheduleByYear: (year: number) => Promise<import("./types/schedule/index.js").default[]>;
