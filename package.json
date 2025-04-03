@@ -2,6 +2,16 @@
 	"name": "formula-one-js",
 	"version": "1.1.12",
 	"author": "christophe bellec",
+	  "contributors": [
+    {
+      "name": "christophe77",
+      "url": "https://github.com/christophe77"
+    },
+    {
+      "name": "ablanco",
+      "url": "https://github.com/ablanco"
+    }
+  ],
 	"homepage": "https://github.com/christophe77/formula-one-js",
 	"engines": {
 		"node": "12.x || 14.x || >= 16"
